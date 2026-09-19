@@ -1,0 +1,19 @@
+name: BoltRadiusClaim
+version: '1.0.0'
+main: de.playground.boltradiusclaim.BoltRadiusClaimPlugin
+api-version: '1.21'
+author: PlayGround
+description: Sperrt (claimt) alle Bolt-sperrbaren Blöcke im Radius um einen Spieler - z.B. um WorldEdit-Copy-Paste-Bauten nachträglich mit Bolt zu schützen.
+depend: [Bolt]
+
+commands:
+  boltclaim:
+    description: Sperrt alle sperrbaren Blöcke im angegebenen Radius um dich mit Bolt.
+    usage: '&cNutzung: &7/boltclaim <radius>'
+    permission: playground.boltclaim
+    aliases: [radiusclaim, claimarea]
+
+permissions:
+  playground.boltclaim:
+    description: Erlaubt die Nutzung von /boltclaim zum Massen-Sperren mit Bolt.
+    default: op

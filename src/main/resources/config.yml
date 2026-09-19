@@ -1,0 +1,15 @@
+# ============================================================
+#  BoltRadiusClaim - Konfiguration
+# ============================================================
+
+# Maximal erlaubter Radius in Blöcken pro Ausführung von /boltclaim.
+# Verhindert, dass jemand versehentlich (oder absichtlich) einen riesigen
+# Bereich auf einmal claimt und dabei den Server kurz einfrieren lässt.
+# 25 = Würfel von 51x51 Blöcken (x/z) x Höhe -> für normale Bauten/WorldEdit-
+# Pastes völlig ausreichend.
+max-radius: 25
+
+# Der Bolt-Protection-Typ, mit dem neue Sperren angelegt werden.
+# Muss einem gültigen Typ aus eurer Bolt access.yml entsprechen
+# (Standard-Installation: "private" - nur Owner + freigegebene Spieler).
+protection-type: private
